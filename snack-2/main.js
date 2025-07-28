@@ -72,3 +72,12 @@ soccerPlayers.forEach((soccerPlayers,index) => {
 });
 
 console.log(soccerPlayers)
+
+//creiamo un nuovo array nel quale inseriamo solo i nomi e i falli subiti
+const newSoccerPlayers = soccerPlayers.map(player => ({
+  name: player.name,
+  fouls_won: player.fouls_won
+}));
+
+
+console.log(newSoccerPlayers);
