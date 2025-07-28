@@ -60,4 +60,8 @@ const soccerPlayers = [
     },
 ]
 
-console.log(soccerPlayers)
+//console.log(soccerPlayers)
+//provo la funzione math random
+const number = Math.floor(Math.random() * 101);
+console.log(number);
+
