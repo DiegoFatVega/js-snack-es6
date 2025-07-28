@@ -2,7 +2,7 @@
 Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 Stampare a schermo la bici con peso minore. */
 
-const biciclette = [
+const bicicle = [
     {
         name: 'Tarmac SL8',
         weight: 6.65,
@@ -44,3 +44,10 @@ const biciclette = [
         weight: 7.10,
     },
 ]
+
+/* console.log(bicicle); */
+
+for(let i = 0; i < bicicle.length; i ++){
+    const bicicleVariable = bicicle[i];
+    console.log(bicicleVariable);
+}
