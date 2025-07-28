@@ -21,7 +21,7 @@ const bicicle = [
     },
     {
         name: 'Teammachine SLR01',
-        weight: 6.90,
+        weight: 6.10,
     },
     {
         name: 'Pinarello Dogma',
@@ -37,7 +37,7 @@ const bicicle = [
     },
     {
         name: 'Wilier Filante',
-        weight: 6.80,
+        weight: 5.80,
     },
     {
         name: 'Cervélo R5',
@@ -47,7 +47,16 @@ const bicicle = [
 
 /* console.log(bicicle); */
 
-for(let i = 0; i < bicicle.length; i ++){
-    const bicicleVariable = bicicle[i];
+/* for(let i = 0; i < bicicle.length; i ++){
     console.log(bicicleVariable);
+} */
+
+let minWeight = bicicle[0];
+
+for (const bici of bicicle){
+    if(bici.weight < minWeight.weight){
+        minWeight = bici;
+    }
 }
+
+console.log(minWeight);
